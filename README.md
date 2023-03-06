@@ -185,7 +185,7 @@ CREATE TABLE yong_animal AS
 SELECT Name, Birthday, Commands, genus, TIMESTAMPDIFF(MONTH, Birthday, CURDATE()) AS Age_in_month
 FROM animals WHERE Birthday BETWEEN ADDDATE(curdate(), INTERVAL -3 YEAR) AND ADDDATE(CURDATE(), INTERVAL -1 YEAR);
  
-SELECT * FROM y0ng_animal;
+SELECT * FROM yong_animal;
 ```
 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на
 прошлую принадлежность к старым таблицам.
